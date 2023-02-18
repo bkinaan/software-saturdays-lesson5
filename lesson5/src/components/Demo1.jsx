@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React/* , { useState, useEffect } */ from 'react';
 
 
 export default function Demo1() {
-    useEffect(() => {
+    /* useEffect(() => {
         onComponentMount()
         return onComponentUnmount
-    }, [])
+    }, []) */
     // Adding empty array ensures useEffect happens only when component loads or unloads, not on every re-render
     // If we didn't pass that array in, the useEffect would re-run on every single change on the page, even if it was just the user typing input
 
@@ -20,7 +20,11 @@ export default function Demo1() {
     */
     // Will cause an infinite loop
 
-    const onComponentMount = () => {
+    /* useEffect(() => {
+
+    }) */
+
+   /*  const onComponentMount = () => {
         console.log("The component has mounted.")
     }
 
@@ -33,6 +37,6 @@ export default function Demo1() {
     
 
     // Return some JSX here...
-    return someJSX;
+    return someJSX; */
     
 }
